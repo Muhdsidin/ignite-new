@@ -11,7 +11,7 @@ function Feature() {
   return (
     (<div className="w-full py-20 lg:py-40">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 justify-end items-end  gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-end items-center  gap-10">
           <div className="flex gap-4 flex-col items-start">
             <div>
               <Badge>Platform</Badge>
@@ -23,9 +23,7 @@ function Feature() {
               </h2>
               <p
                 className="text-lg  max-w-xl lg:max-w-sm leading-relaxed tracking-tight text-muted-foreground  text-left">
-                Managing a small business today is already tough. Avoid further
-                complications by ditching outdated, tedious trade methods. Our
-                goal is to streamline SMB trade, making it easier and faster than
+             Running a business is tough—don’t let outdated systems hold you back. We build modern websites, apps, and web solutions to streamline operations and drive growth effortlessly.
                 ever.
               </p>
             </div>
@@ -35,17 +33,15 @@ function Feature() {
               <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                   <CarouselItem key={index}>
-                    <div
-                      className="flex rounded-md aspect-video bg-muted items-center justify-center p-6">
-                      <span className="text-sm">
-                        Platform Screenshot {index + 1}
-                      </span>
-                    </div>
+                   <video className="background-video" autoPlay loop muted style={{ width: "100%", height: "100%", objectFit: "cover",borderRadius:"24px" }}>
+            <source src="https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMlw32j8I5NUyXCf3eTH4wrh0KA7G86ZnBFzaj" type="video/mp4" />
+            
+          </video>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              {/* <CarouselPrevious />
+              <CarouselNext /> */}
             </Carousel>
           </div>
         </div>

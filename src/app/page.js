@@ -5,6 +5,8 @@ import SubHero from "@/components/hero/SubHero";
 import Navbar from "@/components/Navbar/Navbar";
 
 import Offer from "@/components/Offers/Offer";
+import Scroll from "@/components/scroller/Scroll";
+import Service from "@/components/services/Service";
 import Show from "@/components/show/Show";
 import TestiMonial from "@/components/testimonials/TestiMonial";
 
@@ -13,13 +15,16 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
     <Navbar/>
       <Hero id="Home"/>
-      <SubHero />
+      
       <div className="w-full flex justify-center" id="About">
         <About />
       </div>
       <div id="Projects">
         <Show />
         </div>
+        {/* <SubHero /> */}
+        <Scroll />
+        <Service />
       <TestiMonial />
       <Offer />
       <div className="mt-auto" id="Contact">
