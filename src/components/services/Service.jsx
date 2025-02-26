@@ -7,6 +7,10 @@ import { LayoutGrid } from "@/components/ui/layout-grid";
 export default function Service() {
   return (
     <div className="h-screen py-20 w-full">
+      <div className="w-full flex justify-center items-center">
+      <h1 className="text-3xl font-semibold leading-tight sm:text-5xl sm:leading-tight items-center">Services </h1>
+
+      </div>
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -16,12 +20,12 @@ const SkeletonOne = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        House in the woods
+      Tailor Your Website
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+      We create fully customized,
+       responsive websites that reflect your brand identity and engage your audience.
       </p>
     </div>
   );
@@ -31,13 +35,12 @@ const SkeletonTwo = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        House above the clouds
+      Digital Marketing
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
+      Improve your website’s
+       ranking on Google and attract organic traffic with our proven SEO strategies.
       </p>
     </div>
   );
@@ -46,12 +49,11 @@ const SkeletonThree = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Greens all over
+        Data Analytics
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+      Get real-time, interactive dashboards and reports that provide clear insights into your business performance.
       </p>
     </div>
   );
@@ -60,12 +62,12 @@ const SkeletonFour = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Rivers are serene
+        APP Development
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+      Create feature-rich iOS and Android apps
+       that deliver seamless user experiences and drive engagement
       </p>
     </div>
   );

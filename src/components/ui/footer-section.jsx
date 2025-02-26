@@ -28,6 +28,10 @@ function Footerdemo() {
     }
   }, [isDarkMode])
 
+  function Redirect (link){
+    window.location.href = link
+  }
+
   const sendMail = async ()=>{
     try {
       const response = await axios("/api/sendmail", {
@@ -38,6 +42,7 @@ function Footerdemo() {
       })
 
       console.log(response.data)
+      setEmail("")
     } catch (error) {
       console.log(error)
     }
@@ -51,7 +56,7 @@ function Footerdemo() {
           <div className="relative">
             <h2 className="mb-4 text-3xl font-bold tracking-tight">Stay Connected</h2>
             <p className="mb-6 text-muted-foreground">
-              Join our newsletter for the latest updates and exclusive offers.
+             Connect With Your Email For More Updates
             </p>
             <form className="relative" onSubmit={(e) => e.preventDefault()}>
               <Input
@@ -75,19 +80,19 @@ function Footerdemo() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
             <nav className="space-y-2 text-sm">
-              <a href="#" className="block transition-colors hover:text-primary">
+              <a href="#Home" className="block transition-colors hover:text-primary">
                 Home
               </a>
-              <a href="#" className="block transition-colors hover:text-primary">
+              <a href="#About" className="block transition-colors hover:text-primary">
                 About Us
               </a>
               <a href="#" className="block transition-colors hover:text-primary">
                 Services
               </a>
-              <a href="#" className="block transition-colors hover:text-primary">
-                Products
+              <a href="#Projects" className="block transition-colors hover:text-primary">
+                Projects
               </a>
-              <a href="#" className="block transition-colors hover:text-primary">
+              <a href="#Contact" className="block transition-colors hover:text-primary">
                 Contact
               </a>
             </nav>
@@ -95,10 +100,10 @@ function Footerdemo() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
             <address className="space-y-2 text-sm not-italic">
-              <p>123 Innovation Street</p>
-              <p>Tech City, TC 12345</p>
+              <p>Calicut , Kerala </p>
+              <p>IT HUB</p>
               <p>Phone: (123) 456-7890</p>
-              <p>Email: hello@example.com</p>
+              <p>Email: igniteway.in@gmail.com</p>
             </address>
           </div>
           <div className="relative">
@@ -107,7 +112,7 @@ function Footerdemo() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
+                    <Button onClick={() => Redirect("https://www.facebook.com/igniteway/")} variant="outline" size="icon" className="rounded-full">
                       <Facebook className="h-4 w-4" />
                       <span className="sr-only">Facebook</span>
                     </Button>
@@ -120,7 +125,7 @@ function Footerdemo() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
+                    <Button onClick={() => Redirect("https://twitter.com/igniteway")} variant="outline" size="icon" className="rounded-full">
                       <Twitter className="h-4 w-4" />
                       <span className="sr-only">Twitter</span>
                     </Button>
@@ -133,9 +138,9 @@ function Footerdemo() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
+                    <Button onClick={() => Redirect("https://www.instagram.com/igniteway/")} variant="outline" size="icon" className="rounded-full">
                       <Instagram className="h-4 w-4" />
-                      <span className="sr-only">Instagram</span>
+                      <span className="sr-only">Instagr am</span>
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent>
@@ -146,7 +151,7 @@ function Footerdemo() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
+                    <Button onClick={() => Redirect("https://www.linkedin.com/company/igniteway/")} variant="outline" size="icon" className="rounded-full">
                       <Linkedin className="h-4 w-4" />
                       <span className="sr-only">LinkedIn</span>
                     </Button>
@@ -170,7 +175,7 @@ function Footerdemo() {
         <div
           className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 Your Company. All rights reserved.
+            © 2024 IgniteWay. All rights reserved.
           </p>
           <nav className="flex gap-4 text-sm">
             <a href="#" className="transition-colors hover:text-primary">
