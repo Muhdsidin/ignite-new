@@ -11,10 +11,14 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { Facebook, Instagram, Linkedin, Moon, Send, Sun, Twitter } from "lucide-react"
+import {useState} from "react"
+import axios from "axios"
 
 function Footerdemo() {
   const [isDarkMode, setIsDarkMode] = React.useState(true)
   const [isChatOpen, setIsChatOpen] = React.useState(false)
+  const [email , setEmail] = useState("")
+  console.log(email)
   
   React.useEffect(() => {
     if (isDarkMode) {
@@ -23,6 +27,21 @@ function Footerdemo() {
       document.documentElement.classList.remove("dark")
     }
   }, [isDarkMode])
+
+  const sendMail = async ()=>{
+    try {
+      const response = await axios("/api/sendmail", {
+        method: "POST",
+        data:{
+          email
+        }
+      })
+
+      console.log(response.data)
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     (<div
@@ -34,14 +53,17 @@ function Footerdemo() {
             <p className="mb-6 text-muted-foreground">
               Join our newsletter for the latest updates and exclusive offers.
             </p>
-            <form className="relative">
+            <form className="relative" onSubmit={(e) => e.preventDefault()}>
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="pr-12 backdrop-blur-sm" />
+                className="pr-12 backdrop-blur-sm"
+                onChange={(event) => setEmail(event.target.value)} />
+
               <Button
                 type="submit"
                 size="icon"
+                onClick={sendMail}
                 className="absolute right-1 top-1 h-8 w-8 rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105">
                 <Send className="h-4 w-4" />
                 <span className="sr-only">Subscribe</span>
