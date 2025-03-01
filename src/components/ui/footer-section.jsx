@@ -50,7 +50,7 @@ function Footerdemo() {
 
   return (
     (<div
-      className="relative border-t bg-black text-foreground transition-colors duration-300">
+      className="relative border-t bg-black text-foreground transition-colors duration-300" id="Contact">
       <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="relative">
