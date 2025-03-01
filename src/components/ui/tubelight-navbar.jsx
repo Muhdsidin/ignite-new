@@ -69,7 +69,7 @@ function NavbarF() {
   const getLeftPosition = (tabName) => {
     if (isMobile) {
       switch (tabName) {
-        case 'Home': return 'calc(0% + 10px)';
+        case 'Home': return 'calc(0% + 15px)';
         case 'About': return 'calc(23% + 2px)';
         case 'Projects': return 'calc(22% + 2px)';
         case 'Contact': return 'calc(22% + 2px)';
