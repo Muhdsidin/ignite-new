@@ -5,39 +5,33 @@ function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Get a fully customized website tailored to your brand and business needs. We create responsive, fast, and SEO-friendly websites that leave a lasting impression.",
+      name: "Web Development",
+      designation: "Design and Development",
+      src: "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMZeHetErY7LJ9eqvB1ajVKuU0Wbk4HxwtfpQP",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "We build high-performance, user-friendly mobile apps tailored to your business needs. Whether it's iOS, Android, or cross-platform, we ensure a seamless experience.",
+      name: "App Development",
+      designation: "Development and Implementation",
+      src: "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMKEVYvfYTeMNSz6H1hI59mujstUnv4wxbg7AJ",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "We provide cutting-edge data analytics services to help businesses make informed decisions based on real-time data.",
+      name: "Data Analytics",
+      designation: "Data Analysis and Visualization",
+      src: "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQM4T167Big9EvzHnJuiBPF7OxSftNcKmGkZXaj",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "We offer a range of digital marketing services to help businesses grow their online presence and reach their target audience.",
+      name: "Digital Marketing",
+      designation: "Digital Marketing and Growth",
+      src: "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMGOm3HQ2DE0RCnIYNjs5P6LSQTJchgzdy8me4",
     },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+   
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
 }
