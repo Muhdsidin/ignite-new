@@ -26,7 +26,7 @@ export async function POST(req) {
 
     let mailOptions = {
       from: process.env.EMAIL,
-      to: "officialzedro@gmail.com",
+      to: "ajmalshahan23@gmail.com",
       subject: `Mail from ${email}`,
       text: `Someone is trying to contact through ${email}`,
     };
