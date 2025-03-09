@@ -10,7 +10,7 @@ export async function POST(req) {
 
     const body = await req.json();  
     console.log("Received Data:", body); // 👉 Debugging purpose
-    const { email } = body;
+    const { email , number , name , message } = body;
 
     if (!email) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
@@ -18,6 +18,8 @@ export async function POST(req) {
 
     let transporter = nodemailer.createTransport({
       service: "gmail",
+      port: 465,
+      host: "smtp.gmail.com",
       auth: {
         user: "ajmalshahan23@gmail.com", // Your email app password
         pass: "omrd xkgi yhed oglo",  
@@ -25,10 +27,10 @@ export async function POST(req) {
     });
 
     let mailOptions = {
-      from: process.env.EMAIL,
-      to: "ajmalshahan23@gmail.com",
+      from: email,
+      to: "officialzedro@gmail.com",
       subject: `Mail from ${email}`,
-      text: `Someone is trying to contact through ${email}`,
+      text: `Name: ${name}\nEmail: ${email}\nNumber: ${number}\nMessage: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);

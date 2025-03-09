@@ -2,7 +2,7 @@ import { Footerdemo } from "@/components/ui/footer-section";
 
 function Footer() {
   return (
-    <div className="">
+    <div className=" mt-20">
       <Footerdemo />
     </div>
   );

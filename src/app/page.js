@@ -1,6 +1,7 @@
 
 import About from "@/components/About/About";
 import Footer from "@/components/footer/footer";
+import ContactForm from "@/components/form/Contact";
 import Hero from "@/components/hero/Hero";
 import SubHero from "@/components/hero/SubHero";
 import Navbar from "@/components/Navbar/Navbar";
@@ -11,6 +12,7 @@ import Scroll from "@/components/scroller/Scroll";
 import Service from "@/components/services/Service";
 import Show from "@/components/show/Show";
 import TestiMonial from "@/components/testimonials/TestiMonial";
+import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
 
 export default function Home() {
@@ -31,6 +33,7 @@ export default function Home() {
         <AnimatedTestimonialsDemo />
       <TestiMonial />
       <Offer />
+      <ContactForm /> 
       <div className="mt-auto" id="Contact">
         <Footer />
       </div>
