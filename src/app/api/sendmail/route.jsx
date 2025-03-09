@@ -18,8 +18,9 @@ export async function POST(req) {
 
     let transporter = nodemailer.createTransport({
       service: "gmail",
-      port: 465,
       host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
       auth: {
         user: "ajmalshahan23@gmail.com", // Your email app password
         pass: "omrd xkgi yhed oglo",  

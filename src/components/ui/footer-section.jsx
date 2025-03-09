@@ -32,21 +32,7 @@ function Footerdemo() {
     window.location.href = link
   }
 
-  const sendMail = async ()=>{
-    try {
-      const response = await axios("/api/sendmail", {
-        method: "POST",
-        data:{
-          email
-        }
-      })
-
-      console.log(response.data)
-      setEmail("")
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  
 
   return (
     (<div
@@ -68,7 +54,7 @@ function Footerdemo() {
               <Button
                 type="submit"
                 size="icon"
-                onClick={sendMail}
+                
                 className="absolute right-1 top-1 h-8 w-8 rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105">
                 <Send className="h-4 w-4" />
                 <span className="sr-only">Subscribe</span>

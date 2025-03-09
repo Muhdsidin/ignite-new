@@ -26,6 +26,7 @@ const ContactForm = () => {
             setEmail("");
             setName("");
             setMessage("");
+
             setNumber("");
         } catch (error) {
             console.error("Error sending email:", error);
@@ -33,15 +34,15 @@ const ContactForm = () => {
     };
 
     return (
-        <form  className="w-[90%] mt-14 max-w-2xl mx-auto p-6 rounded-md shadow-md space-y-4">
+        <form onSubmit={(e)=> e.preventDefault() }  className="w-[90%] mt-14 max-w-2xl mx-auto p-6 rounded-md shadow-md space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Name" className="w-full" />
                 <Input value={number} onChange={(e) => setNumber(e.target.value)} type="tel" placeholder="Phone Number" className="w-full" />
             </div>
             <Input value={email} type="email" placeholder="Email" className="w-full" onChange={(e) => setEmail(e.target.value)} />
             <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message" className="w-full h-32 p-2 border rounded-md bg-transparent"></textarea>
-            <div className="flex justify-center">
-                <button onClick={sendMail} type="submit" className="w-1/2">Submit</button>
+            <div onClick={sendMail} className="flex justify-center">
+                <button  type="submit" className="w-1/2">Submit</button>
             </div>
         </form>
     );
