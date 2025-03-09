@@ -3,17 +3,21 @@ import { FaqSection } from "../faq";
 
 const DEMO_FAQS = [
   {
-    question: "What makes your platform unique hellon world?",
-    answer: "Our platform stands out through its intuitive design, powerful automation capabilities, and seamless integration options. We've focused on creating a user experience that combines simplicity with advanced features.",
+    question: "How do I get started with your services",
+    answer: "You can contact us via our website, email, or phone. Our team will discuss your requirements, provide a proposal, and outline the development process...",
   },
   {
-    question: "How does the pricing structure work?",
-    answer: "We offer flexible, transparent pricing tiers designed to scale with your needs. Each tier includes a core set of features, with additional capabilities as you move up. All plans start with a 14-day free trial.",
+    question: "What types of websites do you develop?",
+    answer: "We develop corporate websites, e-commerce platforms, blogs, portfolio sites, and custom web applications...",
   },
   {
-    question: "What kind of support do you offer?",
-    answer: "We provide comprehensive support through multiple channels. This includes 24/7 live chat, detailed documentation, video tutorials, and dedicated account managers for enterprise clients.",
+    question: "Can you convert my website into a mobile app?",
+    answer: "Yes, we can create a mobile app version of your website with enhanced features..",
   },
+  {
+    question : "Do you provide custom solutions",
+    answer :"Yes, all our services are tailored to meet your specific business needs and goals.."
+  }
 ];
 
 export function FaqSectionDemo() {

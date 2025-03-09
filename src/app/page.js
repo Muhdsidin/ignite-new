@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         {/* <SubHero /> */}
         <Scroll />
-        {/* <Service /> */}
+        {/* <Service /> */}   
         <AnimatedTestimonialsDemo />
       <TestiMonial />
       <Offer />
