@@ -52,7 +52,7 @@ function Footerdemo() {
                 onChange={(event) => setEmail(event.target.value)} />
 
               <Button
-                type="submit"
+               
                 size="icon"
                 
                 className="absolute right-1 top-1 h-8 w-8 rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105">

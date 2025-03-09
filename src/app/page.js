@@ -1,10 +1,13 @@
 
 import About from "@/components/About/About";
+
+
 import Footer from "@/components/footer/footer";
 import ContactForm from "@/components/form/Contact";
 import Hero from "@/components/hero/Hero";
 import SubHero from "@/components/hero/SubHero";
 import Navbar from "@/components/Navbar/Navbar";
+import { FaqSectionDemo } from "@/components/new/New";
 
 import Offer from "@/components/Offers/Offer";
 import { AnimatedTestimonialsDemo } from "@/components/pre/Pre";
@@ -33,7 +36,12 @@ export default function Home() {
         <AnimatedTestimonialsDemo />
       <TestiMonial />
       <Offer />
-      <ContactForm /> 
+      <div className="w-full flex justify-center ">
+
+      <FaqSectionDemo />
+      </div>
+      <ContactForm />
+
       <div className="mt-auto" id="Contact">
         <Footer />
       </div>

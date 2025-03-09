@@ -18,14 +18,14 @@ export async function POST(req) {
 
     let transporter = nodemailer.createTransport({
       service: "gmail",
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
+     
       auth: {
-        user: "ajmalshahan23@gmail.com", // Your email app password
-        pass: "omrd xkgi yhed oglo",  
+        user: "ajmalshahan23@gmail.com",
+        pass: "omrd xkgi yhed oglo",
       },
+     
     });
+    
 
     let mailOptions = {
       from: email,
