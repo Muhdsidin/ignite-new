@@ -13,6 +13,8 @@ import {
 import { Facebook, Instagram, Linkedin, Moon, Send, Sun, Twitter } from "lucide-react"
 import {useState} from "react"
 import axios from "axios"
+import icon from "@/favicon/icon.png"
+import Image from "next/image";
 
 function Footerdemo() {
   const [isDarkMode, setIsDarkMode] = React.useState(true)
@@ -41,25 +43,13 @@ function Footerdemo() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="relative">
             <h2 className="mb-4 text-3xl font-bold tracking-tight">Stay Connected</h2>
-            <p className="mb-6 text-muted-foreground">
-             Connect With Your Email For More Updates
-            </p>
-            <form className="relative" onSubmit={(e) => e.preventDefault()}>
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="pr-12 backdrop-blur-sm"
-                onChange={(event) => setEmail(event.target.value)} />
+            <div className="flex  items-center  ">
+  <Image src={icon} alt="icon" className="h-20 w-20 mb-2" />
+  <p className="mb-6 text-muted-foreground mt-1">Connect For Updates</p>
+</div>
 
-              <Button
-               
-                size="icon"
-                
-                className="absolute right-1 top-1 h-8 w-8 rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105">
-                <Send className="h-4 w-4" />
-                <span className="sr-only">Subscribe</span>
-              </Button>
-            </form>
+            
+           
             <div
               className="absolute -right-4 top-0 h-24 w-24 rounded-full bg-primary/10 blur-2xl" />
           </div>

@@ -1,3 +1,4 @@
+"use client"
 import { HeroGeometric } from "@/components/ui/shape-landing-hero"
 
 
