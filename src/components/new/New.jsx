@@ -22,7 +22,7 @@ const DEMO_FAQS = [
 
 export function FaqSectionDemo() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center ">
       <FaqSection
         title="Frequently Asked Questions"
         description="Everything you need to know about our platform"

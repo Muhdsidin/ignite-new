@@ -15,7 +15,14 @@ function AnimatedTestimonialsDemo() {
         "We build high-performance, user-friendly mobile apps tailored to your business needs. Whether it's iOS, Android, or cross-platform, we ensure a seamless experience.",
       name: "App Development",
       designation: "Development and Implementation",
-      src: "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMKEVYvfYTeMNSz6H1hI59mujstUnv4wxbg7AJ",
+      src: "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQM9GL7aznCKtJRImXlo4P5Y1u2iLze3cbgfvy7",
+    },
+    {
+      quote:
+        "We debug, optimize, and enhance your existing code, website, or app for better performance and smooth functionality. Let us handle the fixes while you focus on growth!.",
+      name: "Fix & Optimize Your Existing Code, Website, or App ",
+      designation: "Fix Your App & Web",
+      src: "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMUFmCMlaOT8u9dHQD2Exkb6X5zLKsiIycBP7M",
     },
     {
       quote:
@@ -31,6 +38,7 @@ function AnimatedTestimonialsDemo() {
       designation: "Digital Marketing and Growth",
       src: "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMGOm3HQ2DE0RCnIYNjs5P6LSQTJchgzdy8me4",
     },
+   
    
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;

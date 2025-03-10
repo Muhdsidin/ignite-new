@@ -43,10 +43,12 @@ const testimonials = [
 
 export default function TestiMonial() {
   return (
+  
     <TestimonialsSection
       title="Trusted by customers worldwide"
       description="Join businesses worldwide in transforming the future with our cutting-edge web, mobile, and AI-driven solutions."
       testimonials={testimonials}
     />
+   
   )
 }

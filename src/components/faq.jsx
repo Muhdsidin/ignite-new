@@ -40,7 +40,7 @@ const FaqSection = React.forwardRef(
           </div>
 
           {/* Contact Section */}
-          {contactInfo && (
+          {/* {contactInfo && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ const FaqSection = React.forwardRef(
                 {contactInfo.buttonText}
               </Button>
             </motion.div>
-          )}
+          )} */}
         </div>
       </section>)
     );

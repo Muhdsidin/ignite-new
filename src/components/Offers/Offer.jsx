@@ -4,7 +4,7 @@ import { HyperText } from "../ui/hyper-text";
 
 function Offer() {
   return (
-    <div className=" w-full">
+    <div className=" w-full ">
       <div className=" w-full">
       <HyperText
       className="text-5xl font-bold text-white"
