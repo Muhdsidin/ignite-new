@@ -42,11 +42,12 @@ function Footerdemo() {
       <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="relative">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight">Stay Connected</h2>
-            <div className="flex  items-center  ">
-  <Image src={icon} alt="icon" className="h-20 w-20 mb-2" />
-  <p className="mb-6 text-muted-foreground mt-1">Connect For Updates</p>
+            <div className="flex  items-center gap-x-2  ">
+          <Image src={icon} alt="icon" className="h-10 w-10 mb-2 " />
+            <h2 className="mb-4 text-3xl font-bold tracking-tight mt-2">IgniteWay</h2>
+  
 </div>
+  <p className="mb-6 text-muted-foreground mt-1">Connect For Updates</p>
 
             
            

@@ -143,9 +143,9 @@ function HeroGeometric({
             <Image
               src={icon}
               alt="icon"
-              className="h-4 w-4"
+              className="h-6 w-7"
             />
-            <span className="text-sm text-white/60 tracking-wide">{badge}</span>
+            <span className="text-lg text-white/60 tracking-wide">{badge}</span>
           </motion.div>
 
           <motion.div
