@@ -64,7 +64,7 @@ const ContactForm = () => {
                 {/* <button onClick={sendMail}  type="submit" className="w-1/2 hover:cursor-pointer">Submit</button> */}
                 
          
-            <Button size="sm" cursor="pointer" className="block z-20 mx-auto" onClick={sendMail} >
+            <Button size="sm" cursor="pointer" className="" onClick={sendMail} >
                             Contact Support
                           </Button>
          

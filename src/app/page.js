@@ -1,5 +1,6 @@
 
 import About from "@/components/About/About";
+import Content from "@/components/content/Content";
 
 
 import Footer from "@/components/footer/footer";
@@ -31,6 +32,7 @@ export default function Home() {
         <Show />
         </div>
         {/* <SubHero /> */}
+        <Content />
         <Scroll />
         {/* <Service /> */}   
         <AnimatedTestimonialsDemo />
