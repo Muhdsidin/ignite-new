@@ -88,7 +88,7 @@ function Footerdemo() {
             <address className="space-y-2 text-sm not-italic">
               <p>Calicut , Kerala </p>
               <p>IT HUB</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>Phone: 9496610662</p>
               <p>Email: igniteway.in@gmail.com</p>
             </address>
           </div>
@@ -124,7 +124,7 @@ function Footerdemo() {
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button onClick={() => Redirect("https://www.instagram.com/igniteway/")} variant="outline" size="icon" className="rounded-full">
+                    <Button onClick={() => Redirect("https://www.instagram.com/igniteway_/")} variant="outline" size="icon" className="rounded-full">
                       <Instagram className="h-4 w-4" />
                       <span className="sr-only">Instagr am</span>
                     </Button>
