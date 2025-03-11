@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -19,7 +19,7 @@ export function HyperText({
   },
 
   className,
-  animateOnLoad = true
+  animateOnLoad = true,
 }) {
   const [displayText, setDisplayText] = useState(text.split(""));
   const [trigger, setTrigger] = useState(false);
@@ -44,8 +44,10 @@ export function HyperText({
             l === " "
               ? l
               : i <= interations.current
-                ? text[i]
-                : alphabets[getRandomInt(26)]));
+              ? text[i]
+              : alphabets[getRandomInt(26)]
+          )
+        );
         interations.current = interations.current + 0.1;
       } else {
         setTrigger(false);
@@ -57,19 +59,21 @@ export function HyperText({
   }, [text, duration, trigger, animateOnLoad]);
 
   return (
-    (<div
+    <div
       className="flex scale-100  justify-center cursor-default overflow-hidden py-2"
-      onMouseEnter={triggerAnimation}>
-      <AnimatePresence mode="wait">
+      onMouseEnter={triggerAnimation}
+    >
+      <AnimatePresence mode="wait" >
         {displayText.map((letter, i) => (
           <motion.span
             key={i}
-            className={cn("font-mono", letter === " " ? "w-3" : "", className)}
-            {...framerProps}>
-            {letter.toUpperCase()}
+            className={cn("", letter === " " ? "w-3" : "", className)}
+            {...framerProps}
+          >
+            {letter}
           </motion.span>
         ))}
       </AnimatePresence>
-    </div>)
+    </div>
   );
 }

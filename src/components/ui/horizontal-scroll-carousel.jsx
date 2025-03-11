@@ -20,7 +20,7 @@ const HorizontalScrollCarousel = ({ images }) => {
         <motion.div
           style={{ x }}
           ref={containerRef}
-          className="flex gap-20"
+          className="flex gap-x-20"
         >
           {images.map((src, i) => (
             <Card

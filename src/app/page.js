@@ -1,7 +1,5 @@
-
 import About from "@/components/About/About";
 import Content from "@/components/content/Content";
-
 
 import Footer from "@/components/footer/footer";
 import ContactForm from "@/components/form/Contact";
@@ -22,25 +20,24 @@ import dynamic from "next/dynamic";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen ">
-    <Navbar/>
-      <Hero id="Home"/>
-      
+      <Navbar />
+      <Hero id="Home" />
+
       <div className="w-full flex justify-center" id="About">
         <About />
       </div>
-      <div id="Projects">
+      {/* <div >
         <Show />
-        </div>
-        {/* <SubHero /> */}
-        <Content />
-        <Scroll />
-        {/* <Service /> */}   
-        <AnimatedTestimonialsDemo />
+      </div> */}
+
+      <Content id="Projects" />
+      <Scroll />
+
+      <AnimatedTestimonialsDemo />
       <TestiMonial />
       <Offer />
-      <div className="w-full flex justify-center ">
-
-      <FaqSectionDemo />
+      <div className="w-full h-[100vh] flex justify-center ">
+        <FaqSectionDemo />
       </div>
       <ContactForm />
 

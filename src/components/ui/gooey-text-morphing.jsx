@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
@@ -7,7 +7,7 @@ export function GooeyText({
   morphTime = 1,
   cooldownTime = 0.25,
   className,
-  textClassName
+  textClassName,
 }) {
   const text1Ref = React.useRef(null);
   const text2Ref = React.useRef(null);
@@ -20,11 +20,17 @@ export function GooeyText({
 
     const setMorph = (fraction) => {
       if (text1Ref.current && text2Ref.current) {
-        text2Ref.current.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        text2Ref.current.style.filter = `blur(${Math.min(
+          8 / fraction - 8,
+          100
+        )}px)`;
         text2Ref.current.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
 
         fraction = 1 - fraction;
-        text1Ref.current.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        text1Ref.current.style.filter = `blur(${Math.min(
+          8 / fraction - 8,
+          100
+        )}px)`;
         text1Ref.current.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
       }
     };
@@ -66,7 +72,8 @@ export function GooeyText({
           textIndex = (textIndex + 1) % texts.length;
           if (text1Ref.current && text2Ref.current) {
             text1Ref.current.textContent = texts[textIndex % texts.length];
-            text2Ref.current.textContent = texts[(textIndex + 1) % texts.length];
+            text2Ref.current.textContent =
+              texts[(textIndex + 1) % texts.length];
           }
         }
         doMorph();
@@ -83,7 +90,7 @@ export function GooeyText({
   }, [texts, morphTime, cooldownTime]);
 
   return (
-    (<div className={cn("relative", className)}>
+    <div className={cn("relative w-full max-w-full", className)}>
       <svg className="absolute h-0 w-0" aria-hidden="true" focusable="false">
         <defs>
           <filter id="threshold">
@@ -93,28 +100,32 @@ export function GooeyText({
               values="1 0 0 0 0
                       0 1 0 0 0
                       0 0 1 0 0
-                      0 0 0 255 -140" />
+                      0 0 0 255 -140"
+            />
           </filter>
         </defs>
       </svg>
       <div
-        className="flex items-center justify-center"
-        style={{ filter: "url(#threshold)" }}>
+        className="flex items-center justify-center w-full"
+        style={{ filter: "url(#threshold)" }}
+      >
         <span
           ref={text1Ref}
           className={cn(
             "absolute inline-block select-none text-center text-6xl md:text-[60pt]",
             "text-foreground",
             textClassName
-          )} />
+          )}
+        />
         <span
           ref={text2Ref}
           className={cn(
             "absolute inline-block select-none text-center text-6xl md:text-[60pt]",
             "text-foreground",
             textClassName
-          )} />
+          )}
+        />
       </div>
-    </div>)
+    </div>
   );
 }

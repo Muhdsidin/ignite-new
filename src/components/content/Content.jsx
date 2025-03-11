@@ -13,16 +13,15 @@ function Content() {
       </h2>
 
       {/* Paragraph */}
-      <p className="para text-sm sm:text-base md:text-lg lg:text-xl max-w-[90%] md:max-w-2xl">
-        Transform your business with IgniteWay, offering fully branded native apps
-        for both Android and iOS. IgniteWay delivers comprehensive mobile commerce
-        capabilities, designed to help you boost customer acquisition, enhance
-        retention, and provide a superior shopping experience on every device.
+      <p className="para text-gray-400 text-sm sm:text-base md:text-md lg:text-lg max-w-[90%] md:max-w-2xl">
+        Transform your business with IgniteWay, offering fully branded native
+        apps for both Android and iOS. IgniteWay delivers comprehensive mobile
+        commerce capabilities, designed to help you boost customer acquisition,
+        enhance retention, and provide a superior shopping experience on every
+        device.
       </p>
     </div>
   );
 }
 
 export default Content;
-
-

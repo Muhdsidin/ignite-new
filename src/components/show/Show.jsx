@@ -3,7 +3,7 @@ import { GooeyText } from "@/components/ui/gooey-text-morphing";
 
 function Show() {
   return (
-    <div className="h-[100vh] flex items-center justify-center">
+    <div className="h-[100vh] flex items-center justify-center w-full">
       <GooeyText
         texts={["Design", "Engineering", "Is", "Awesome"]}
         morphTime={1}
@@ -14,4 +14,4 @@ function Show() {
   );
 }
 
-export default Show
+export default Show;
