@@ -11,7 +11,7 @@ const DEMO_FAQS = [
     answer: "We develop corporate websites, e-commerce platforms, blogs, portfolio sites, and custom web applications...",
   },
   {
-    question: "Can you convert my website into a mobile app?",
+    question: "Can you turn my website into an app?",
     answer: "Yes, we can create a mobile app version of your website with enhanced features..",
   },
   {

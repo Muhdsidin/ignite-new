@@ -21,7 +21,7 @@ import dynamic from "next/dynamic";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
     <Navbar/>
       <Hero id="Home"/>
       

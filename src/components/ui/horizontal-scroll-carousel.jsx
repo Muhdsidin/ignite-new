@@ -71,7 +71,7 @@ const Card = ({ src, index, containerRef, scrollYProgress }) => {
     <motion.div
       ref={imageRef}
       style={{ scale: smoothScale }}
-      className="group relative h-[550px] w-[203px] overflow-hidden rounded-lg"
+      className="group relative h-[550px] w-[200px] overflow-hidden rounded-lg"
     >
       <Image
         src={src}

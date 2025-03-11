@@ -69,7 +69,7 @@ function NavbarF() {
   const getLeftPosition = (tabName) => {
     if (isMobile) {
       switch (tabName) {
-        case 'Home': return 'calc(0% + 15px)';
+        case 'Home': return 'calc(0% + 10px)';
         case 'About': return 'calc(23% + 2px)';
         case 'Projects': return 'calc(22% + 2px)';
         case 'Contact': return 'calc(22% + 2px)';
@@ -85,7 +85,7 @@ function NavbarF() {
   };
 
   return (
-    <div className='fixed bottom-0 sm:top-0 left-1/2 transform -translate-x-1/2 z-50 mb-6 sm:pt-6'>
+    <div className='fixed bottom-0 sm:top-0 left-1/2 transform -translate-x-1/2 z-50 mb-6 sm:pt-6 '>
       <div className={`${inter.className} flex items-center gap-3 bg-white/5 border border-gray-500/20 backdrop-blur-lg py-1 px-1 rounded-full shadow-lg shadow-black`}>
         {tabs.map((tab) => (
           <button
