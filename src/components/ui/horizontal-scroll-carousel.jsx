@@ -17,21 +17,11 @@ const HorizontalScrollCarousel = ({ images }) => {
   return (
     <section ref={targetRef} className="relative h-[300vh] w-full">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        {/* <div className="sm:flex lg:hidden">hello world</div> */}
-        <Image
-        src={`https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQM89EIm91gqae68lmn9dtJW2FKbLczfiBCI3SZ`}
-        fill
-        style={{ objectFit: "cover" }}
-        alt="carousel image"
-        className="sm:flex lg:hidden"
-      />
-
         <motion.div
           style={{ x }}
           ref={containerRef}
-          className="flex gap-20 sm:hidden lg:flex"
+          className="flex gap-20"
         >
-
           {images.map((src, i) => (
             <Card
               src={src}
