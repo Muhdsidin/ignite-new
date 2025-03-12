@@ -1,6 +1,8 @@
 "use client";
 
 import { HorizontalScrollCarousel } from "@/components/ui/horizontal-scroll-carousel";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
+import Image from "next/image";
 
 const images = [
   "https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMZQEdgRrY7LJ9eqvB1ajVKuU0Wbk4HxwtfpQP",
@@ -12,12 +14,24 @@ const images = [
 
 function Scroll() {
   return (
-    <div className="h-full hidden md:flex bg-black">
-      {/* <h1 className="py-10 text-center text-4xl text-white">Our Creative</h1> */}
-      <HorizontalScrollCarousel images={images} />
-      {/* <h2 className="py-20 text-center text-2xl text-gray-500 dark:text-gray-600">
-        Enjoy the Horizontal Scroll Effect
-      </h2> */}
+    <div>
+      {/* Image visible only on mobile screens */}
+      <motion.div
+  className="group  mt-[30px] flex md:hidden relative h-[550px] w-[full] overflow-hidden rounded-lg items-center justify-center"
+>
+  <Image
+    src="https://p0s6j4vdsr.ufs.sh/f/kIhPyf5uPqQMZQEdgRrY7LJ9eqvB1ajVKuU0Wbk4HxwtfpQP"
+    fill
+    className="object-cover object-center"
+    alt="carousel image"
+  />
+</motion.div>
+
+
+      {/* Horizontal scroll carousel visible only on medium and larger screens */}
+      <div className="hidden md:flex h-full bg-black">
+        <HorizontalScrollCarousel images={images} />
+      </div>
     </div>
   );
 }
