@@ -30,7 +30,7 @@ export default function Home() {
         <Show />
       </div> */}
 
-      <Content id="Projects" />
+      <Content />
       <Scroll />
 
       <AnimatedTestimonialsDemo />

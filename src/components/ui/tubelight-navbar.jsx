@@ -17,7 +17,7 @@ function NavbarF() {
   const tabs = [
     { name: 'Home', sectionId: 'Home', icon: <GoHomeFill /> },
     { name: 'About', sectionId: 'About', icon: <FaUser /> },
-    { name: 'Projects', sectionId: 'Projects', icon: <FaBriefcase /> },
+    { name: 'Services', sectionId: 'Projects', icon: <FaBriefcase /> },
     { name: 'Contact', sectionId: 'Contact', icon: <FaFileAlt /> }
   ];
 
